@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Mood</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <h1>Movie Recommendation Engine</h1>
+    </header>
+
+  <!-- 🔹 MOOD BAR AT TOP -->
+   <div class="container">
+        <section id="moods" class="mood-bar">
+            <button data-mood="emotional">😢 Emotional</button>
+            <button data-mood="happy">😊 Happy</button>
+            <button data-mood="romantic">❤️ Romantic</button>
+            <button data-mood="excited">⚡ Excited</button>
+            <button data-mood="favorites">⭐ Favorites</button>
+            <button data-mood="all">🎬 All</button>
+        </section>
+
+        <section class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search movies by title..." />
+        </section>
+
+
+        <section id="movie-grid" class="movie-grid"></section>
+
+        <section id="moods">
+            <button data-mood="emotional">😢 Emotional</button>
+            <button data-mood="happy">😊 Happy</button>
+            <button data-mood="romantic">❤️ Romantic</button>
+            <button data-mood="excited">⚡ Excited</button>
+            <button data-mood="all">🎬 All</button>
+        </section>
+   </div>
+
+
+
+
+    <!--Scripts-->
+    <script src="js/data.js"></script>
+    <script src="js/normalize.js"></script>
+    <script src="js/recommendation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

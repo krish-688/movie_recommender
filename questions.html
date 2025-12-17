@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="quiz-container">
+
+    <!-- STEP 1 -->
+    <div class="quiz-step active" data-step="1">
+      <h2>1. How are you feeling?</h2>
+      <button data-mood="happy">😊 Happy</button>
+      <button data-mood="neutral">😐 Neutral</button>
+      <button data-mood="sad">😔 Sad</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="quiz-step" data-step="2">
+      <h2>2. What pace do you prefer?</h2>
+      <button data-pace="slow">🐢 Slow</button>
+      <button data-pace="medium">🚶 Medium</button>
+      <button data-pace="fast">🏃 Fast</button>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="quiz-step" data-step="3">
+      <h2>3. Prefer realistic movies?</h2>
+      <button data-realism="true">Yes</button>
+      <button data-realism="false">No</button>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="quiz-step" data-step="4">
+    <h2>4. Choose genres (multiple allowed)</h2>
+    
+    <div class="genre-grid">
+    
+        <label><input type="checkbox" value="action"> Action</label>
+        <label><input type="checkbox" value="adventure"> Adventure</label>
+        <label><input type="checkbox" value="animation"> Animation</label>
+        <label><input type="checkbox" value="biography"> Biography</label>
+    
+        <label><input type="checkbox" value="comedy"> Comedy</label>
+        <label><input type="checkbox" value="crime"> Crime</label>
+        <label><input type="checkbox" value="drama"> Drama</label>
+        <label><input type="checkbox" value="family"> Family</label>
+    
+        <label><input type="checkbox" value="fantasy"> Fantasy</label>
+        <label><input type="checkbox" value="film-noir"> Film-Noir</label>
+        <label><input type="checkbox" value="history"> History</label>
+        <label><input type="checkbox" value="horror"> Horror</label>
+    
+        <label><input type="checkbox" value="music"> Music</label>
+        <label><input type="checkbox" value="musical"> Musical</label>
+        <label><input type="checkbox" value="mystery"> Mystery</label>
+        <label><input type="checkbox" value="romance"> Romance</label>
+    
+        <label><input type="checkbox" value="sci-fi"> Sci-Fi</label>
+        <label><input type="checkbox" value="sport"> Sport</label>
+        <label><input type="checkbox" value="thriller"> Thriller</label>
+        <label><input type="checkbox" value="war"> War</label>
+    
+        <label><input type="checkbox" value="western"> Western</label>
+    
+    </div>
+
+      <br><br>
+      <button id="getMovieBtn">🎬 Get Recommendation</button>
+    </div>
+
+    <!-- NAV -->
+    <div class="quiz-nav">
+      <button id="prevBtn">← Prev</button>
+      <button id="nextBtn">Next →</button>
+    </div>
+
+  </div>
+
+  <script src="js/questions.js"></script>
+</body>
+</html>
